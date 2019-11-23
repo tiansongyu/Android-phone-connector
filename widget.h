@@ -32,7 +32,6 @@ public:
     void sleep(int msec);
     void radio_init();
     QProcess * cmd;
-
 private slots:
     void on_pushButton_connect_clicked();
     void on_pushButton_start_cover_clicked();
@@ -41,6 +40,7 @@ private slots:
     void on_pushButton_start_click_clicked();
 
     void on_pushButton_clicked();
+
 
 private:
     QString machine_name;
@@ -52,6 +52,8 @@ private:
     QString adb_getevent_end = " shell getevent -l >";
     QString adb_getevent_txt = ".txt";
 
+    QString adb_one_click_another = "";
+
     QString adb_one_click = "";
     QString adb_one_click_start = "adb";
     QString adb_one_click_start_2 = " shell dd if=/sdcard/event";
@@ -59,6 +61,7 @@ private:
     QString adb_one_click_med = " of=/dev/input/event";
     QString adb_one_click_end = "";
 
+    QString adb_start_one_click_another = "";
     QString adb_start_one_click = "";
 
 
@@ -66,7 +69,7 @@ private:
     QString adb_start_one_start_2 = " shell while : ; do dd if=/sdcard/event";
 
     QString adb_start_one_med = " of=/dev/input/event";
-    QString adb_start_one_end = " ; done";
+    QString adb_start_one_end = "";
 
     QString adb_s = " -s ";
 
@@ -76,6 +79,8 @@ private:
     QString number ;
 
     QButtonGroup *groupButton1;
+
+    QButtonGroup *groupButton2;
 };
 
 #endif // WIDGET_H

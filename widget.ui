@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Widget</class>
- <widget class="QWidget" name="Widget">
+ <class>widget</class>
+ <widget class="QWidget" name="widget">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -80,7 +80,7 @@
     <rect>
      <x>30</x>
      <y>140</y>
-     <width>261</width>
+     <width>171</width>
      <height>61</height>
     </rect>
    </property>
@@ -91,8 +91,8 @@
   <widget class="QLineEdit" name="lineEdit">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>100</y>
+     <x>200</x>
+     <y>230</y>
      <width>151</width>
      <height>31</height>
     </rect>
@@ -122,6 +122,45 @@
    </property>
    <property name="text">
     <string>多部机器模式</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_fast">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>120</y>
+     <width>117</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>快</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_med">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>150</y>
+     <width>117</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>中(华为)</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_slow">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>180</y>
+     <width>117</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>慢(华为)</string>
    </property>
   </widget>
  </widget>
